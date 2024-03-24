@@ -1,53 +1,71 @@
 #include <iostream>
 #include <vector>
-
+#include <queue>
+ 
+#define pii pair<int, int>
+ 
 using namespace std;
-
-const int MAX_INT = 9999999;
-int N, M, X, n, m, t, answer;
-vector<vector<int>> towns;
-
-void Solve()
-{
-	
-	cin >> N >> M >> X;
-
-	answer = 0;
-	towns.assign(N+1, vector<int>(N+1, MAX_INT));
-
-	while (M--)
-	{
-		cin >> n >> m >> t;
-		towns[n][m] = t;
-	}
-
-	for (int k = 1; k <= N; k++)
-	{
-		towns[k][k] = 0;
-		for (int i = 1; i <= N; i++)
-		{
-			if (towns[i][k] == MAX_INT) continue;
-			for (int j = 1; j <= N; j++)
-			{
-				towns[i][j] = min(towns[i][j], towns[i][k] + towns[k][j]);
-			}
-		}
-	}
-
-	for (int i = 1; i <= N; i++)
-	{
-		answer = max(answer, towns[i][X] + towns[X][i]);
-	}
-
-	cout << answer << "\n";
+ 
+ 
+int N, M, X;
+const int INF = 1e9+7;
+vector<pii > graph[1001]; 
+vector<int> dist;
+int resdist[1001];
+ 
+void input(){
+    int u, v, t;
+    cin >> N >> M >> X;
+    for(int i = 0; i < M; i++){
+        cin >> u >> v >> t;
+        graph[u].push_back(make_pair(t, v));
+    }
 }
-
-int main()
-{
-	cin.tie(nullptr);
-	ios::sync_with_stdio(false);
-
-	Solve();
-
-	return 0;
+ 
+void Dijstra(int S){
+    dist.clear();
+    dist.resize(N+1, INF);
+    
+    dist[S] = 0;
+    
+    priority_queue<pii, vector<pii >, greater<pii > > que;
+    que.push({0, S});
+    
+    while(!que.empty()){
+        int min_cost = que.top().first;
+        int now = que.top().second;
+        que.pop();
+        
+        if(min_cost > dist[now]) continue;
+        
+        for(int i = 0; i < graph[now].size(); i++){
+            int next = graph[now][i].second;
+            int next_cost = min_cost + graph[now][i].first;
+            
+            if(next_cost < dist[next]){
+                dist[next] = next_cost;
+                que.push({next_cost, next});
+            }
+        }
+    }
+}
+ 
+int main(){
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    input();
+    for(int i = 1; i <= N; i++){
+        Dijstra(i);
+        // i가 X로 가는 최단거리 half
+        resdist[i] = dist[X];
+    }
+    Dijstra(X);
+    int res = 0;
+    for(int i = 1; i <= N; i++){
+        resdist[i] += dist[i];
+        res = max(res, resdist[i]);
+    }
+    
+    cout << res;
+    
+    return 0;
 }
