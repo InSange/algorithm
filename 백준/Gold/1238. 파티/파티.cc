@@ -1,71 +1,59 @@
 #include <iostream>
-#include <vector>
 #include <queue>
- 
-#define pii pair<int, int>
- 
+#include <vector>
+#include <cstring>
+#define INF 98765432
 using namespace std;
+int n,x,m;
+vector<pair<int, int>> v[1002];
+int dst[1002]; // 정점까지의 최단거리를 기록
+int result; // 최단거리
  
- 
-int N, M, X;
-const int INF = 1e9+7;
-vector<pii > graph[1001]; 
-vector<int> dist;
-int resdist[1001];
- 
-void input(){
-    int u, v, t;
-    cin >> N >> M >> X;
-    for(int i = 0; i < M; i++){
-        cin >> u >> v >> t;
-        graph[u].push_back(make_pair(t, v));
-    }
-}
- 
-void Dijstra(int S){
-    dist.clear();
-    dist.resize(N+1, INF);
-    
-    dist[S] = 0;
-    
-    priority_queue<pii, vector<pii >, greater<pii > > que;
-    que.push({0, S});
-    
-    while(!que.empty()){
-        int min_cost = que.top().first;
-        int now = que.top().second;
-        que.pop();
-        
-        if(min_cost > dist[now]) continue;
-        
-        for(int i = 0; i < graph[now].size(); i++){
-            int next = graph[now][i].second;
-            int next_cost = min_cost + graph[now][i].first;
-            
-            if(next_cost < dist[next]){
-                dist[next] = next_cost;
-                que.push({next_cost, next});
+// 다익스트라
+void fc(int a, int d){
+    memset(dst, INF, sizeof(dst)); // 초기값 INF
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq; 
+ // 우선순위 큐(최소 거리가 루트로)
+    pq.push({0, a});// pq(거리, 정점)
+    dst[a] = 0; // 시작 지점 거리 0으로 초기화
+    while(!pq.empty()){
+        int cx = pq.top().second; // 현재 정점
+        int cdst = pq.top().first; // 현재 정점까지 거리
+        pq.pop();
+        if(cx == d){ // 현재 정점에 도착했다면
+            result = dst[cx]; // 최단 거리 기록
+            break;
+        }
+        for (int i = 0; i < v[cx].size();i++){ 
+            // 현재 정점과 이어진 다음 정점들 
+            int nx = v[cx][i].first; // 다음 정점 
+            int ndst = v[cx][i].second + cdst; // 다음 정점까지 거리 계산
+            if(dst[nx] > ndst){
+                 // 다음 정점까지 거리와 기록된 정점까지 거리와 비교해
+                 // 최단거리라면
+                dst[nx] = ndst; // 최단거리 기록
+                pq.push({ndst, nx}); // 큐에 넣어줌
             }
         }
     }
 }
- 
 int main(){
-    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    input();
-    for(int i = 1; i <= N; i++){
-        Dijstra(i);
-        // i가 X로 가는 최단거리 half
-        resdist[i] = dist[X];
+    cin >> n >> m >> x;
+    int ans1, ans2, ans;
+    ans = 0;
+    int a, b, t;
+    for (int i = 0; i < m;i++){
+        cin >> a >> b >> t;
+        v[a].push_back({b, t});
     }
-    Dijstra(X);
-    int res = 0;
-    for(int i = 1; i <= N; i++){
-        resdist[i] += dist[i];
-        res = max(res, resdist[i]);
+    for (int i = 1; i <= n;i++){
+        fc(i, x); // 가는 길 최단 거리 
+        ans1 = result; 
+        fc(x, i); // 오는 길 최단 거리
+        ans2 = result;
+        if(ans < ans1+ans2)
+            ans = ans1 + ans2; // 합
     }
-    
-    cout << res;
-    
+    cout << ans << '\n'; // 최단 거리 출력
     return 0;
 }
