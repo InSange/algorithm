@@ -10,11 +10,12 @@ public:
         int mid = v.size()/2;
         if(v.size() % 2 == 1)
         {
-            answer = static_cast<double>(v[mid]);
+            answer = v[mid];
         }
         else
         {
-            answer = (static_cast<double>(v[mid]) + static_cast<double>(v[mid-1]))/2;
+            double num = (v[mid] + v[mid-1]); 
+            answer = num/2;
         }
         return answer;
     }
