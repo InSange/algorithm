@@ -8,10 +8,7 @@ public:
         for(auto str : logs)
         {
             if(str[0] != '.') height++;
-            else if(str[0] == '.')
-            {
-                if(str[1] == '.') height = (height ? height - 1 : 0);
-            }
+            else if(str == "../") height = (height ? height - 1 : 0);
         }
         
         return height;
