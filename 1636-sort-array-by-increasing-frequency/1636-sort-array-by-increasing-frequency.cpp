@@ -1,54 +1,42 @@
 class Solution {
 public:
-    struct compare 
-    {
-        bool operator()(pair<int, int> a, pair<int, int> b)
-        {
-            if(a.first == b.first)
-            {
-                if(a.second < b.second) return true;
-                else return false;
-            }
-            else if(a.first > b.first) return true;
-            else return false;
-        }
-    };
-    
     vector<int> frequencySort(vector<int>& nums) {
-        vector<int> numCnts;
-        
-        numCnts.assign(201, 0);
-        
-        for(int num : nums)
-        {
-            numCnts[num+100]++;
-        }
-        
-        priority_queue<pair<int, int>, vector<pair<int, int>>, compare> pq; // first:cnt, first:val
-        
-        vector<int> ans;
-        
-        for(int i = 0; i < 201; i++)
-        {
-            if(numCnts[i])
-            {
-                pq.push({numCnts[i], i-100});
+        int n=nums.size();
+        vector<int> output;
+        unordered_map<int,pair<int,int>> mp;
+        for(auto& i : nums){
+            if(mp.find(i)!=mp.end()){
+                mp[i].first++;
+                continue;
             }
+            
+            mp[i]={1,i};
         }
         
-        while(!pq.empty())
-        {
-            int cnt = pq.top().first;
-            int val = pq.top().second;
-            
-            pq.pop();
-            
-            for(int i = 0; i < cnt; i++)
-            {
-                ans.push_back(val);
+        vector<pair<int,int>> freq;
+        for(auto& p : mp){
+            freq.push_back({p.second.first,p.first});
+        }
+        
+        sort(freq.begin(),freq.end(),[](const pair<int,int>&a , const pair<int,int>&b){
+            if(a.first==b.first){
+                return a.second>b.second; //sort in desending order if frequency is same
             }
+           return  a.first<b.first;
+        });
+        
+        for(auto& pair : freq){
+           
+            for(int i=0;i<pair.first;i++){
+                output.push_back(pair.second);
+            }
+            
+            
+          
         }
         
-        return ans;
+        
+        return output;
+        
     }
 };
