@@ -1,25 +1,24 @@
 class Solution {
 public:
     int rangeSum(vector<int>& nums, int n, int left, int right) {
-
-        for(int i = 0; i < n; i++)
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+        int ans = 0, mod = pow(10, 9)+7, i;
+        
+        for(i = 0; i < n; i++) pq.push({nums[i], i});
+        
+        i = 1;
+        while(i <= right)
         {
-            int sum = nums[i];
-            for(int j = i+1; j < n; j++)
+            pair<int, int> cur = pq.top();
+            pq.pop();
+            
+            if(i >= left) ans = (ans + cur.first) % mod;
+            if(cur.second < n-1)
             {
-                sum += nums[j];
-                nums.push_back(sum);
+                cur.first += nums[++cur.second];
+                pq.push(cur);
             }
-        }
-        
-        sort(nums.begin(), nums.end());
-        
-        int mod = pow(10, 9) + 7;
-        int ans = 0;
-
-        for(int i = left; i <= right; i++)
-        {
-            ans = (nums[i-1]+ans) % mod;
+            i++;
         }
         
         return ans;
