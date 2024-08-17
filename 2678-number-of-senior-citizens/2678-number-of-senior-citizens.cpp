@@ -1,29 +1,20 @@
 class Solution {
 public:
     int countSeniors(vector<string>& details) {
-        int ans = 0;
-        sort(details.begin(), details.end(), [](const string& a, const string& b)
-             {
-                 if(a[11] == b[11]) return a[12] > b[12];
-                 return a[11] > b[11];
-             });
-        
-        for(string detail : details)
-        {
-            cout << detail << "\n";
-            if(detail[11] > '6')
-            {
-                ans++;
-                continue;
+        int seniorCount = 0;
+
+        // Iterate through each passenger's details
+        for (string& passengerInfo : details) {
+            // Extract the age from the passengerInfo string
+            // Age is located at index 11 and 12 (2 characters)
+            int age = stoi(passengerInfo.substr(11, 2));
+
+            // Check if the passenger is a senior (strictly over 60 years old)
+            if (age > 60) {
+                seniorCount++;
             }
-            if(detail[11] == '6' && detail[12] > '0')
-            {
-                ans++;
-                continue;
-            }
-            else break;
         }
-        
-        return ans;
+
+        return seniorCount;
     }
 };
