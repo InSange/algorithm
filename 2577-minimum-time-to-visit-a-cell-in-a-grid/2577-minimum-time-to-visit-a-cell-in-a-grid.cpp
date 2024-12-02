@@ -10,13 +10,14 @@ public:
         int col = grid[0].size();
 
         vector<vector<int>> val;
-        val.assign(row, vector<int>(col, 0));
+        val.assign(row, vector<int>(col, INT_MAX));
         
         priority_queue<vector<int>, vector<vector<int>>, greater<>> pq;
         int dy[4] = {0, 0, -1, 1};
         int dx[4] = {1, -1, 0, 0};
         
         pq.push({0, 0, 0});
+        val[0][0] = 0;
         
         while(!pq.empty())
         {
@@ -30,13 +31,6 @@ public:
                 return curTime;
             }
             
-            if(val[curY][curX])
-            {
-                continue;
-            }
-            val[curY][curX] = curTime;
-            
-            
             for(int i = 0; i < 4; i++)
             {
                 int nextY = curY + dy[i];
@@ -45,11 +39,14 @@ public:
                 if(nextY < 0 || nextY >= row || nextX < 0 || nextX >= col) continue; // Out of Bounds
                 int nextTime = max(curTime + 1, grid[nextY][nextX] + ((grid[nextY][nextX] - curTime) % 2 == 0 ? 1 : 0));
                 
-                // 시간이 값보다 크거나 같을 경우
-                pq.push({nextTime, nextY, nextX});                
+                if(val[nextY][nextX] > nextTime)
+                {
+                    pq.push({nextTime, nextY, nextX});             
+                    val[nextY][nextX] = nextTime;
+                }
             }
         }
         
-        return 0;
+        return -1;
     }
 };
