@@ -5,6 +5,8 @@ using namespace std;
 int solution(vector<vector<int> > land)
 {
     int answer = 0;
+
+    int arr[100000][4];
     
     for(int i = 0; i < land.size()-1; i++)
     {
