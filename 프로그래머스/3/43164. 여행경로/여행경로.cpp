@@ -27,7 +27,7 @@ void dfs(string cur, vector<vector<string>>& tickets, int cnt)
         dfs(tickets[i][1], tickets, cnt + 1);
         if(f)
         {
-            answer.insert(answer.begin(), tickets[i][1]);
+            answer.push_back(tickets[i][1]);
             return;
         }
         visited[i] = false;
@@ -42,7 +42,8 @@ vector<string> solution(vector<vector<string>> tickets) {
     sort(tickets.begin(), tickets.end()); // 알파벳 순서 정렬
     
     dfs("ICN", tickets, 0);
-    answer.insert(answer.begin(), "ICN");
+    answer.push_back("ICN");
+    reverse(answer.begin(), answer.end());
     
     return answer;
 }
