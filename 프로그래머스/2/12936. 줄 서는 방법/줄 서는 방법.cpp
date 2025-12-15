@@ -6,7 +6,7 @@ using namespace std;
 
 long long fac(int n)
 {
-    if(n < 2) return n;
+    if(n <= 1) return 1;
     return n * fac(n-1);
 }
 
@@ -19,23 +19,18 @@ vector<int> solution(int n, long long k) {
         humans.push_back(i);
     }
     
-    int nmg = n;
     k--;
-    while(answer.size() != n)
+    
+    long long factorial = fac(n);
+    for(int i = n; i > 0; i--)
     {
-        if(nmg == 1)
-        {
-            answer.push_back(humans[0]);
-            break;
-        }
-        long long facto = fac(nmg-1);
-        int index = (k == 0 ? 0 : k/facto);
+        factorial /= i;
+        int index = k/factorial;
         
         answer.push_back(humans[index]);
         humans.erase(humans.begin() + index);
         
-        k = k%facto;
-        nmg--;
+        k %= factorial;
     }
     
     return answer;
