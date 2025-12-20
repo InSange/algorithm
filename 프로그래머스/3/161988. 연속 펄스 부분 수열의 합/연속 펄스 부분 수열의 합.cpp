@@ -1,9 +1,32 @@
 #include <string>
 #include <vector>
 #include <limits.h>
+#include <iostream>
 
 using namespace std;
 
+// 두번째 풀이 : 누적합 활용하기.
+long long solution(vector<int> sequence) {
+    long long p_sum = 0; // 현재까지의 누적 합
+    long long max_p = 0; // 누적 합 중 최댓값 (초기값 0 포함)
+    long long min_p = 0; // 누적 합 중 최솟값 (초기값 0 포함)
+    
+    int pulse = 1;
+    
+    for (int num : sequence) {
+        p_sum += (long long)num * pulse;
+
+        max_p = max(max_p, p_sum);
+        min_p = min(min_p, p_sum);
+        
+        pulse *= -1; 
+    }
+    
+    return max_p - min_p;
+}
+
+// 첫풀이 : +-, -+을 sequence에 적용시켜서 값을 비교해나가며 답을 찾음.
+/*
 long long solution(vector<int> sequence) {
     long long answer = 0;
     
@@ -33,3 +56,4 @@ long long solution(vector<int> sequence) {
     
     return answer;
 }
+*/
