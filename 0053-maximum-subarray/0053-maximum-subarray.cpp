@@ -1,13 +1,18 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        int minSum = 0, sum = 0, answer = nums[0];   
+// dp[i-1] 역할을 하는 변수
+        int prev_max = nums[0];
+        int answer = nums[0];
 
-        for(const int& num : nums)
+        for(int i = 1; i < nums.size(); i++)
         {
-            sum += num;
-            answer = max(answer, sum - minSum);
-            minSum = min(minSum, sum);
+            // 점화식: max(나부터 새로 시작, 이전까지의 합 + 나)
+            // dp[i] = max(nums[i], dp[i-1] + nums[i])
+            int cur_max = max(nums[i], prev_max + nums[i]);
+            
+            answer = max(answer, cur_max);
+            prev_max = cur_max; // 다음 턴을 위해 갱신
         }
 
         return answer;
