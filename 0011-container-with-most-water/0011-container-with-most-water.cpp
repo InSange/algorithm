@@ -5,17 +5,15 @@ public:
 
         while(left < right)
         {
-            if(height[left] <= height[right])
-            {
-                maxSum = max(maxSum, height[left] * (right-left));
+            int h = min(height[left], height[right]);
+            maxSum = max(maxSum, h * (right - left));
+
+            while (left < right && height[left] <= h) {
                 left++;
             }
-            else
-            {
-                maxSum = max(maxSum, height[right] * (right-left));
+            while (left < right && height[right] <= h) {
                 right--;
             }
-            
         }
 
         return maxSum;
