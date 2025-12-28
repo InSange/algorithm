@@ -8,6 +8,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0011-container-with-most-water](https://github.com/InSange/algorithm/tree/master/0011-container-with-most-water) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
+| [0238-product-of-array-except-self](https://github.com/InSange/algorithm/tree/master/0238-product-of-array-except-self) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -24,4 +25,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/InSange/algorithm/tree/master/0011-container-with-most-water) |
+## Prefix Sum
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/InSange/algorithm/tree/master/0238-product-of-array-except-self) |
 <!---LeetCode Topics End-->
