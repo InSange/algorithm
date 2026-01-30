@@ -19,6 +19,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
+| [1143-longest-common-subsequence](https://github.com/InSange/algorithm/tree/master/1143-longest-common-subsequence) |
 ## Two Pointers
 |  |
 | ------- |
@@ -42,6 +43,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/InSange/algorithm/tree/master/0003-longest-substring-without-repeating-characters) |
+| [1143-longest-common-subsequence](https://github.com/InSange/algorithm/tree/master/1143-longest-common-subsequence) |
 ## Sliding Window
 |  |
 | ------- |
