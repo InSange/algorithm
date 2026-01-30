@@ -9,7 +9,7 @@ public:
             v[time[0]].push_back({time[2], time[1]});
         }
 
-        priority_queue<pair<int, int>, vector<pair<int, int>>, less<pair<int, int>>> pq;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
         pq.push({0, k});
 
         while(!pq.empty())
