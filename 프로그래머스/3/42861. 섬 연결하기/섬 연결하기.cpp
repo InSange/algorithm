@@ -6,48 +6,42 @@
 using namespace std;
 using pii = pair<int, int>;
 
-
 int solution(int n, vector<vector<int>> costs) {
     int answer = 0;
-    vector<vector<int>> islands;
-    vector<vector<int>> bridge;
-    vector<bool> visited;
-    islands.assign(100, vector<int>(100, 0)); // 섬과 섬 사이의 코스트
-    bridge.assign(100, vector<int>()); // 섬과 섬을 잇는 다리
-    visited.assign(n, false); // 방문한 최솟 값
     
-    cout << visited.size() << ", " << visited[0] << "\n";
+    vector<vector<pii>> v(n, vector<pii>());
+    vector<int> dist(n, 1e9);
+    vector<bool> visited(n, false);
     
-    for(auto cost : costs)
-    {
-        int i1 = cost[0], i2 = cost[1], c = cost[2];
-        islands[i1][i2] = c;
-        islands[i2][i1] = c;
-        bridge[i1].push_back(i2);
-        bridge[i2].push_back(i1);
+    for(const auto& cost : costs)
+    {   // 0번 지점 <- 비용, 1번지점
+        v[cost[0]].push_back({cost[2], cost[1]});
+        v[cost[1]].push_back({cost[2], cost[0]});
     }
     
-    priority_queue<pii, vector<pii>, greater<pii>> pq; // 탐색할 섬의 인덱스
+    priority_queue<pii, vector<pii>, greater<pii>> pq;
+    
     pq.push({0, 0});
     
     while(!pq.empty())
     {
-        int cur = pq.top().second;
-        int cost = pq.top().first;
+        pii cur = pq.top();
         pq.pop();
         
-        if(visited[cur]) continue;
-        answer += cost;
-        visited[cur] = true;
-        //cout << "cur : " << cur << ", cost : " << cost << "\n";
+        if(visited[cur.second]) continue;
+        visited[cur.second] = true;
+        dist[cur.second] = cur.first;
         
-        for(auto b : bridge[cur])
+        for(const auto& bridge : v[cur.second])
         {
-            if(visited[b]) continue;
-
-            pq.push({islands[cur][b], b});
-            //cout << "push data { " << b << ", cost : " << islands[cur][b] << "} \n";
+            if(dist[bridge.second] <= bridge.first) continue;
+            pq.push(bridge);
         }
+    }
+    
+    for(const int& d : dist)
+    {
+        answer += d;
     }
     
     return answer;
