@@ -21,19 +21,16 @@ int solution(int N, int number) {
         
         for(int j = 1; j < i; j++)
         {
-            for(int k = 1; k < i; k++)
+            int k = i - j;
+
+            for(const int& a : dp[j])
             {
-                if(j + k != i) continue;
-                
-                for(const int& a : dp[j])
+                for(const int& b : dp[k])
                 {
-                    for(const int& b : dp[k])
-                    {
-                        dp[i].insert(a + b);
-                        dp[i].insert(a * b);
-                        if(a - b > 0) dp[i].insert(a - b);
-                        if(b != 0) dp[i].insert(a/b);
-                    }
+                    dp[i].insert(a + b);
+                    dp[i].insert(a * b);
+                    if(a - b > 0) dp[i].insert(a - b);
+                    if(b != 0) dp[i].insert(a/b);
                 }
             }
         }
