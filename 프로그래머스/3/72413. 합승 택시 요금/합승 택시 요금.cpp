@@ -21,6 +21,8 @@ void dijkstra(vector<int>& result, const vector<vector<pii>>& graph, int start)
         pii cur = pq.top();
         pq.pop();
         
+        if (result[cur.first] < cur.second) continue;
+        
         for(int i = 0; i < graph[cur.first].size(); i++)
         {
             pii next = graph[cur.first][i];
