@@ -38,6 +38,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/InSange/algorithm/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0146-lru-cache](https://github.com/InSange/algorithm/tree/master/0146-lru-cache) |
 | [0560-subarray-sum-equals-k](https://github.com/InSange/algorithm/tree/master/0560-subarray-sum-equals-k) |
 ## String
 |  |
@@ -72,4 +73,16 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
+## Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/InSange/algorithm/tree/master/0146-lru-cache) |
+## Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/InSange/algorithm/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/InSange/algorithm/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
