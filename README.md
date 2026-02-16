@@ -15,6 +15,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Divide and Conquer
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/InSange/algorithm/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
 ## Dynamic Programming
 |  |
@@ -74,6 +75,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/InSange/algorithm/tree/master/0023-merge-k-sorted-lists) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
 ## Shortest Path
 |  |
@@ -82,6 +84,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Linked List
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/InSange/algorithm/tree/master/0023-merge-k-sorted-lists) |
 | [0146-lru-cache](https://github.com/InSange/algorithm/tree/master/0146-lru-cache) |
 ## Design
 |  |
@@ -103,4 +106,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/InSange/algorithm/tree/master/0207-course-schedule) |
+## Merge Sort
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/InSange/algorithm/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
