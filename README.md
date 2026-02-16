@@ -8,6 +8,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0011-container-with-most-water](https://github.com/InSange/algorithm/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/InSange/algorithm/tree/master/0015-3sum) |
+| [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
 | [0238-product-of-array-except-self](https://github.com/InSange/algorithm/tree/master/0238-product-of-array-except-self) |
 | [0560-subarray-sum-equals-k](https://github.com/InSange/algorithm/tree/master/0560-subarray-sum-equals-k) |
@@ -18,6 +19,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
 | [1143-longest-common-subsequence](https://github.com/InSange/algorithm/tree/master/1143-longest-common-subsequence) |
 ## Two Pointers
@@ -25,6 +27,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0011-container-with-most-water](https://github.com/InSange/algorithm/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/InSange/algorithm/tree/master/0015-3sum) |
+| [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
 ## Greedy
 |  |
 | ------- |
@@ -85,4 +88,12 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/InSange/algorithm/tree/master/0146-lru-cache) |
+## Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
