@@ -72,18 +72,21 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/InSange/algorithm/tree/master/0207-course-schedule) |
+| [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/InSange/algorithm/tree/master/0207-course-schedule) |
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
+| [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
 ## Graph Theory
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/InSange/algorithm/tree/master/0207-course-schedule) |
+| [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
 ## Heap (Priority Queue)
 |  |
@@ -137,4 +140,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
+## Union-Find
+|  |
+| ------- |
+| [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
 <!---LeetCode Topics End-->
