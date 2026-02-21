@@ -2,36 +2,30 @@ class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
         if(amount == 0) return 0;
-        int answer = 0;
-        unordered_map<int, int> um;
-        um[amount] = 0;
 
-        queue<int> q;
+        vector<bool> visited(amount + 1, false);
+        visited[amount] = true;
 
-        q.push(amount);
+        queue<pair<int, int>> q;
+        q.push({amount, 0});
 
-        while(!q.empty())
-        {
-            int cur = q.front();
+        while (!q.empty()) {
+            int cur = q.front().first;
+            int count = q.front().second;
             q.pop();
+            
+            for (int coin : coins) {
+                int next_amount = cur - coin;
 
-            for(auto& coin : coins)
-            {
-                int next = cur - coin;
+                if (next_amount == 0) return count + 1;
 
-                if(next>= 0)
-                {
-                    if(um[next]) continue;
-                    else
-                    {
-                        um[next] = um[cur]+1;
-                    }
-
-                    q.push(next);
-                }   
+                if (next_amount > 0 && !visited[next_amount]) {
+                    visited[next_amount] = true;
+                    q.push({next_amount, count + 1});
+                }
             }
         }
 
-        return um[0] ? um[0] : -1;
+        return -1;
     }
 };
