@@ -16,6 +16,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
 | [0518-coin-change-ii](https://github.com/InSange/algorithm/tree/master/0518-coin-change-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/InSange/algorithm/tree/master/0560-subarray-sum-equals-k) |
+| [0875-koko-eating-bananas](https://github.com/InSange/algorithm/tree/master/0875-koko-eating-bananas) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
 ## Divide and Conquer
 |  |
@@ -144,4 +145,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
+## Binary Search
+|  |
+| ------- |
+| [0875-koko-eating-bananas](https://github.com/InSange/algorithm/tree/master/0875-koko-eating-bananas) |
 <!---LeetCode Topics End-->
