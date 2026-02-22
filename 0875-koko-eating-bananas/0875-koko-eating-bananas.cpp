@@ -12,7 +12,7 @@ public:
         int k = 0;
         while(left <= right)
         {
-            int mid = (left + right) / 2;
+            int mid = left + (right - left) / 2;
 
             unsigned int time = 0;
             for(int& pile : piles)
