@@ -16,6 +16,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
 | [0518-coin-change-ii](https://github.com/InSange/algorithm/tree/master/0518-coin-change-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/InSange/algorithm/tree/master/0560-subarray-sum-equals-k) |
+| [0739-daily-temperatures](https://github.com/InSange/algorithm/tree/master/0739-daily-temperatures) |
 | [0875-koko-eating-bananas](https://github.com/InSange/algorithm/tree/master/0875-koko-eating-bananas) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
 ## Divide and Conquer
@@ -115,10 +116,12 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
+| [0739-daily-temperatures](https://github.com/InSange/algorithm/tree/master/0739-daily-temperatures) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
+| [0739-daily-temperatures](https://github.com/InSange/algorithm/tree/master/0739-daily-temperatures) |
 ## Topological Sort
 |  |
 | ------- |
