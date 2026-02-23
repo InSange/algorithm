@@ -19,6 +19,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0739-daily-temperatures](https://github.com/InSange/algorithm/tree/master/0739-daily-temperatures) |
 | [0875-koko-eating-bananas](https://github.com/InSange/algorithm/tree/master/0875-koko-eating-bananas) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
+| [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -76,6 +77,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0207-course-schedule](https://github.com/InSange/algorithm/tree/master/0207-course-schedule) |
 | [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
+| [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -84,6 +86,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
+| [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 ## Graph Theory
 |  |
 | ------- |
@@ -95,6 +98,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/InSange/algorithm/tree/master/0023-merge-k-sorted-lists) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
+| [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 ## Shortest Path
 |  |
 | ------- |
@@ -144,12 +148,15 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
+| [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 ## Union-Find
 |  |
 | ------- |
 | [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
+| [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 ## Binary Search
 |  |
 | ------- |
 | [0875-koko-eating-bananas](https://github.com/InSange/algorithm/tree/master/0875-koko-eating-bananas) |
+| [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 <!---LeetCode Topics End-->
