@@ -28,8 +28,6 @@ public:
                 if(OutBounds(nextY, nextX, row, col)) continue;
 
                 int diff = abs(heights[nextY][nextX] - heights[curY][curX]);
-                if(visited[nextY][nextX] <= diff) continue;
-
                 int nextCost = max(cost, diff);
                 if(nextCost >= visited[nextY][nextX]) continue;
 
