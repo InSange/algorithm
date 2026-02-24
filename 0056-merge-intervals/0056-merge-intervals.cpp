@@ -7,12 +7,7 @@ public:
             if(a[0] == b[0]) return a[1] < b[1];
             return a[0] < b[0];
         });
-
-        for(auto interval : intervals)
-        {
-            cout << interval[0] << " , " << interval[1] << "\n";
-        }
-
+        
         vector<vector<int>> answer;
         int left = 0, right = 1;
         while(right <= intervals.size())
