@@ -1,30 +1,20 @@
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        if(intervals.size() == 1) return intervals;
-
-        sort(intervals.begin(), intervals.end(), [](const vector<int>& a, const vector<int>& b) {
-            if(a[0] == b[0]) return a[1] < b[1];
-            return a[0] < b[0];
-        });
+        vector<vector<int>> ans;
+        sort(intervals.begin(), intervals.end());
         
-        vector<vector<int>> answer;
-        int left = 0, right = 1;
-        while(right <= intervals.size())
+        for(auto interval : intervals)
         {
-            vector<int> cur(intervals[left]);
-
-            while((right < intervals.size()) && (cur[1] >= intervals[right][0]))
+            if(ans.empty() || ans.back()[1] < interval[0])
             {
-                if(intervals[right][1] > cur[1]) cur[1] = intervals[right][1];
-                right++;
+                ans.push_back(interval);
             }
-
-            answer.push_back(cur);
-            left = right;
-            right++;
+            else
+            {
+                ans.back()[1] = max(ans.back()[1], interval[1]);
+            }
         }
-
-        return answer;
+        return ans;
     }
 };
