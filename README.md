@@ -11,6 +11,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0039-combination-sum](https://github.com/InSange/algorithm/tree/master/0039-combination-sum) |
 | [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/InSange/algorithm/tree/master/0055-jump-game) |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [0238-product-of-array-except-self](https://github.com/InSange/algorithm/tree/master/0238-product-of-array-except-self) |
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
@@ -30,6 +31,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/InSange/algorithm/tree/master/0055-jump-game) |
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
 | [0518-coin-change-ii](https://github.com/InSange/algorithm/tree/master/0518-coin-change-ii) |
 | [1143-longest-common-subsequence](https://github.com/InSange/algorithm/tree/master/1143-longest-common-subsequence) |
@@ -43,6 +45,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/InSange/algorithm/tree/master/0011-container-with-most-water) |
+| [0055-jump-game](https://github.com/InSange/algorithm/tree/master/0055-jump-game) |
 ## Prefix Sum
 |  |
 | ------- |
