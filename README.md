@@ -10,6 +10,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0015-3sum](https://github.com/InSange/algorithm/tree/master/0015-3sum) |
 | [0039-combination-sum](https://github.com/InSange/algorithm/tree/master/0039-combination-sum) |
 | [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
+| [0048-rotate-image](https://github.com/InSange/algorithm/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/InSange/algorithm/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/InSange/algorithm/tree/master/0056-merge-intervals) |
@@ -155,6 +156,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/InSange/algorithm/tree/master/0048-rotate-image) |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
@@ -168,4 +170,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0875-koko-eating-bananas](https://github.com/InSange/algorithm/tree/master/0875-koko-eating-bananas) |
 | [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
+## Math
+|  |
+| ------- |
+| [0048-rotate-image](https://github.com/InSange/algorithm/tree/master/0048-rotate-image) |
 <!---LeetCode Topics End-->
