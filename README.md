@@ -14,6 +14,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/InSange/algorithm/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/InSange/algorithm/tree/master/0056-merge-intervals) |
+| [0079-word-search](https://github.com/InSange/algorithm/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [0238-product-of-array-except-self](https://github.com/InSange/algorithm/tree/master/0238-product-of-array-except-self) |
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
@@ -66,6 +67,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/InSange/algorithm/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0076-minimum-window-substring](https://github.com/InSange/algorithm/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/InSange/algorithm/tree/master/0079-word-search) |
 | [0208-implement-trie-prefix-tree](https://github.com/InSange/algorithm/tree/master/0208-implement-trie-prefix-tree) |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [1143-longest-common-subsequence](https://github.com/InSange/algorithm/tree/master/1143-longest-common-subsequence) |
@@ -82,6 +84,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/InSange/algorithm/tree/master/0079-word-search) |
 | [0207-course-schedule](https://github.com/InSange/algorithm/tree/master/0207-course-schedule) |
 | [0684-redundant-connection](https://github.com/InSange/algorithm/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/InSange/algorithm/tree/master/0743-network-delay-time) |
@@ -147,6 +150,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/InSange/algorithm/tree/master/0039-combination-sum) |
+| [0079-word-search](https://github.com/InSange/algorithm/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 ## Trie
 |  |
@@ -157,6 +161,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/InSange/algorithm/tree/master/0048-rotate-image) |
+| [0079-word-search](https://github.com/InSange/algorithm/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/InSange/algorithm/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
