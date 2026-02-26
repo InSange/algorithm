@@ -17,6 +17,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0079-word-search](https://github.com/InSange/algorithm/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/InSange/algorithm/tree/master/0212-word-search-ii) |
 | [0238-product-of-array-except-self](https://github.com/InSange/algorithm/tree/master/0238-product-of-array-except-self) |
+| [0300-longest-increasing-subsequence](https://github.com/InSange/algorithm/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
 | [0518-coin-change-ii](https://github.com/InSange/algorithm/tree/master/0518-coin-change-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/InSange/algorithm/tree/master/0560-subarray-sum-equals-k) |
@@ -35,6 +36,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0042-trapping-rain-water](https://github.com/InSange/algorithm/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/InSange/algorithm/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/InSange/algorithm/tree/master/0055-jump-game) |
+| [0300-longest-increasing-subsequence](https://github.com/InSange/algorithm/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/InSange/algorithm/tree/master/0322-coin-change) |
 | [0518-coin-change-ii](https://github.com/InSange/algorithm/tree/master/0518-coin-change-ii) |
 | [1143-longest-common-subsequence](https://github.com/InSange/algorithm/tree/master/1143-longest-common-subsequence) |
@@ -173,6 +175,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Binary Search
 |  |
 | ------- |
+| [0300-longest-increasing-subsequence](https://github.com/InSange/algorithm/tree/master/0300-longest-increasing-subsequence) |
 | [0875-koko-eating-bananas](https://github.com/InSange/algorithm/tree/master/0875-koko-eating-bananas) |
 | [1631-path-with-minimum-effort](https://github.com/InSange/algorithm/tree/master/1631-path-with-minimum-effort) |
 ## Math
