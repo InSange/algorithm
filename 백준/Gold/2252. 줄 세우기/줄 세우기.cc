@@ -4,51 +4,52 @@
 
 using namespace std;
 
-int N, M;
-vector<vector<int>> childs;
-vector<int> pCnt;
+int N, M, A, B;
+vector<vector<int>> students;
+vector<int> indgree;
 
-void Solve()
+void Input()
 {
 	cin >> N >> M;
-	childs.assign(N + 1, vector<int>());
-	pCnt.assign(N + 1, 0);
+
+	students.assign(N + 1, vector<int>());
+	indgree.assign(N + 1, 0);
 
 	for (int i = 0; i < M; i++)
 	{
-		int n1, n2;
+		cin >> A >> B;
 
-		cin >> n1 >> n2;
-
-		childs[n1].push_back(n2);
-		pCnt[n2]++;
+		students[A].push_back(B);
+		indgree[B]++;
 	}
 
 	queue<int> q;
-
-	for (int i = 1; i <= N; i++)
+	
+	for (int i = 1; i < N + 1; i++)
 	{
-		if (pCnt[i] == 0) q.push(i);
+		if (indgree[i] == 0) q.push(i);
 	}
 
-	vector<int> ans;
+	vector<int> answer;
 
 	while (!q.empty())
 	{
-		int n = q.front();
+		int cur = q.front();
 		q.pop();
-		ans.push_back(n);
 
-		for (int num : childs[n])
+		answer.push_back(cur);
+
+		for (int i = 0; i < students[cur].size(); i++)
 		{
-			pCnt[num]--;
-			if (pCnt[num] == 0) q.push(num);
+
+			indgree[students[cur][i]]--;
+			if (indgree[students[cur][i]] == 0) q.push(students[cur][i]);
 		}
 	}
 
-	for (int n : ans)
+	for (int i = 0; i < answer.size(); i++)
 	{
-		cout << n << " ";
+		cout << answer[i] << " ";
 	}
 }
 
@@ -57,7 +58,7 @@ int main()
 	cin.tie(nullptr);
 	ios::sync_with_stdio(false);
 
-	Solve();
+	Input();
 
 	return 0;
 }
