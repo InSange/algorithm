@@ -3,17 +3,16 @@
 
 using namespace std;
 
-const int INF = 99999999;
 int n, m, a, b, c;
 vector<vector<int>> cities;
 
-void Solve()
+void Input()
 {
 	cin >> n >> m;
-	n++;
-	cities.assign(n, vector<int>(n, INF));
 
-	for (int i = 1; i < n; i++)
+	cities.assign(n + 1, vector<int>(n + 1, 1e9));
+
+	for (int i = 1; i < n + 1; i++)
 	{
 		cities[i][i] = 0;
 	}
@@ -21,27 +20,35 @@ void Solve()
 	for (int i = 0; i < m; i++)
 	{
 		cin >> a >> b >> c;
-
-		if (cities[a][b] < c) continue;
-		cities[a][b] = c;
+		cities[a][b] = min(cities[a][b], c);
 	}
+}
 
-	for (int k = 1; k < n; k++)
+void Solve()
+{
+	for (int i = 1; i < n + 1; i++)
 	{
-		for (int i = 1; i < n; i++)
+		for (int j = 1; j < n + 1; j++)
 		{
-			for (int j = 1; j < n; j++)
+			for (int k = 1; k < n + 1; k++)
 			{
-				cities[i][j] = min(cities[i][k] + cities[k][j], cities[i][j]);
+				cities[j][k] = min(cities[j][k], cities[j][i] + cities[i][k]);
 			}
 		}
 	}
 
-	for (int i = 1; i < n; i++)
+	for (int i = 1; i < n + 1; i++)
 	{
-		for (int j = 1; j < n; j++)
+		for (int j = 1; j < n + 1; j++)
 		{
-			cout << (cities[i][j] == INF ? 0 : cities[i][j]) << " ";
+			if (cities[i][j] == 1e9)
+			{
+				cout << 0 << " ";
+			}
+			else
+			{
+				cout << cities[i][j] << " ";
+			}
 		}
 		cout << "\n";
 	}
@@ -49,9 +56,10 @@ void Solve()
 
 int main()
 {
-	cin.tie(nullptr);
 	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
 
+	Input();
 	Solve();
 
 	return 0;
