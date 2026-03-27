@@ -1,0 +1,1 @@
+select ROUND(sum(c.daily_fee) / count(c.car_type)) as average_fee from CAR_RENTAL_COMPANY_CAR c where c.car_type = 'SUV'
