@@ -182,4 +182,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/InSange/algorithm/tree/master/0048-rotate-image) |
+## Database
+|  |
+| ------- |
+| [0175-combine-two-tables](https://github.com/InSange/algorithm/tree/master/0175-combine-two-tables) |
 <!---LeetCode Topics End-->
