@@ -186,4 +186,5 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0175-combine-two-tables](https://github.com/InSange/algorithm/tree/master/0175-combine-two-tables) |
+| [0182-duplicate-emails](https://github.com/InSange/algorithm/tree/master/0182-duplicate-emails) |
 <!---LeetCode Topics End-->
