@@ -4,13 +4,14 @@
 using namespace std;
 vector<pair<int, int>> houses;
 vector<pair<int, int>> chickens;
-vector<bool> visited;
+vector<int> selected_chickens;
 
-int N, M, r, answer;
+int N, M, answer = 1e9;
 
 void Input()
 {
 	cin >> N >> M;
+	int r;
 
 	for (int i = 0; i < N; i++)
 	{
@@ -23,35 +24,22 @@ void Input()
 			else if (r == 2) chickens.push_back({ i + 1, j + 1 });
 		}
 	}
-
-	visited.assign(chickens.size(), false);
-	answer = 1e9;
 }
 
 void DFS(int start, int cnt)
 {
-	if (cnt < M)
-	{
-		for (int i = start; i < chickens.size(); i++)
-		{
-			visited[i] = true;
-			DFS(i + 1, cnt + 1);
-			visited[i] = false;
-		}
-	}
-	else
+	if (cnt == M)
 	{
 		int sum = 0;
+
 		for (int i = 0; i < houses.size(); i++)
 		{
 			int hY = houses[i].first, hX = houses[i].second;
 			int dist = 1e9;
 
-			for (int j = 0; j < chickens.size(); j++)
+			for (int idx : selected_chickens)
 			{
-				if (!visited[j]) continue;
-				int cY = chickens[j].first, cX = chickens[j].second;
-
+				int cY = chickens[idx].first, cX = chickens[idx].second;
 				dist = min(dist, abs(hY - cY) + abs(hX - cX));
 			}
 
@@ -59,6 +47,14 @@ void DFS(int start, int cnt)
 		}
 
 		answer = min(answer, sum);
+		return;
+	}
+	
+	for (int i = start; i < chickens.size(); i++)
+	{
+		selected_chickens.push_back(i);
+		DFS(i + 1, cnt + 1);
+		selected_chickens.pop_back();  
 	}
 }
 
